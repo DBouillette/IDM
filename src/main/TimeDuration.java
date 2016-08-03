@@ -7,6 +7,7 @@ public class TimeDuration {
 	private int min;
 	private int sec;
 	
+	//Constructeur du convertisseur et lancement de l'exception si valeur négative
 	public TimeDuration(int duration)
 		throws BadBadValueException
 		{
@@ -21,6 +22,7 @@ public class TimeDuration {
 		
 	}
 
+	//Calcul et conversion de la durée donnée par l'utilisateur
 	public String toString(){
 		hour =duration/3600;
 		min = duration/60%60;
